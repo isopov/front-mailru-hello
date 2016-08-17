@@ -1,0 +1,20 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="CORS github pages test">
+  <meta name="author" content="Ivan Sopov">
+</head>
+<body>
+	<h1 class="message">Anybody here? </h1>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script>
+	$.get("https://java-parkmailru-hello.herokuapp.com", function( data ) {
+		$(".message" ).append( data );
+	});
+	</script>
+</body>
+</html>
